@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+    <div class="home">
+    <div class="row">
+        <div class="col-12">
+        
+
+        {{ content }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2>As-salamu alaykum and Welcome to Marks Gate Muslim Community!</h2>
+        </div>
+        <div class="col-6"><img src="{{ "/assets/image/front-page-1.jpg" | relative_url }}" alt=""></div>
+        <div class="col-6"><img src="{{ "/assets/image/front-page-2.jpg" | relative_url }}" alt=""></div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h3>What we do</h3>
+            <p>We provide facilities for prayer particularly for Jummah prayer as well as
+            Taraweeh prayer during Ramadan. </p>
+            <h3>Is that all we do?</h3>
+            <p>We provide fund raising for those unfortunate in life (Poor and needy).
+               We also provide Madrasah classes for children being taught by an experienced Mualim. 
+               
+            </p>
+            <h3>What is our goal?</h3>
+            <p>
+                <ul>
+                    <li>Continuous Islamic events</li>
+                    <li>Development of local community</li>
+                    <li>Contribute to social, spirital and economic enhancement of the whole community</li>
+                </ul>
+            </p>
+            <p>
+            <strong>We plan to do so much <a href="{{ "/about" | relative_url }}">more</a></strong>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+        {%- if site.posts.size > 0 -%}
+                <h2>{{ page.list_title | default: "News & Current Affairs" }}</h2>
+                <ul class="post-list">
+                {%- for post in site.posts -%}
+                <li>
+                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                    <span class="post-meta">{{ post.date | date: date_format }}</span>
+                    <h3>
+                    <a class="post-link" href="{{ post.url | relative_url }}">
+                        {{ post.title | escape }}
+                    </a>
+                    </h3>
+                    {{ post.excerpt }}
+                </li>
+                {%- endfor -%}
+                </ul>
+
+                <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
+        {%- endif -%}
+
+        </div>
+    </div>
+   
+    </div>

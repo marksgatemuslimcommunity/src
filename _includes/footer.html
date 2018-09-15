@@ -1,0 +1,41 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li><strong>Contact or queries:</strong> 
+            </li>
+            <li>
+
+              0787 985 4431
+            </li>
+            {%- if site.email -%}
+            <!-- <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li> -->
+            {%- endif -%}
+        </ul>
+        <p><strong>Please Consider Donating:</strong></p>
+        <p>
+          Mark Gate Muslim Community<br>
+          Account No: 14690357<br>
+          Sort Code: 60-05-01<br>
+          Natwest
+        </p>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        {%- include social.html -%}
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{- site.description | escape -}}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
