@@ -43,7 +43,7 @@ These classes are every **Monday to Wednesday** from **5PM - 7PM**
 ## Where are we located?
 We currently have a temporary location, we soon hope to have an established place of learning.
 
-<div id="madrasah-location-map">
+<!-- <div id="madrasah-location-map">
 </div>
 
-<script src="https://maps.googleapis.com/maps/api/js?callback=setMadrasahMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=setMadrasahMap"></script> -->

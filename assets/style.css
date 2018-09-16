@@ -77,10 +77,43 @@ h2 {
     #prayer-times {
         display: none;       
     }
+
+    #newsletter-banner {
+        display: none!important;
+    } 
 }
 @media screen and (max-width: 600px) {
 .site-nav input ~ .trigger {
     clear: both;
     display: none;
 }
+}
+
+#newsletter-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: #16bb7c;
+    display: inline-block;
+    z-index: 3;
+}
+
+
+#newsletter-banner input {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid rgba(255,255,255,0.6);
+    background: linear-gradient(#eee, #fff);
+    transition: all 0.3s ease-out;
+    padding: 5px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center; 
+    font-size: 14px
+}
+
+#newsletter-banner .col-4:first-child {
+    text-align: right;
+    min-height: 33px;
 }

@@ -2,11 +2,16 @@
  * Created by Ibrahim on 16/09/2017.
  */
 $(document).ready(function () {
+    if (document.cookie.includes('noBanner=true')) {
+        $('#newsletter-banner').css('display', 'none');
+    } else {
+        $('#newsletter-banner').css('display', 'inline-block');
+    }
     setHijriDay();
     setPrayerTimes();
-    setMadrasahSubmenu();
     setMadrasahMap();
     setJummahMap();
+
 });
 
 function getCurrentTime() {
@@ -48,30 +53,14 @@ function setPrayerTimes() {
     })
 }
 
-function setMadrasahSubmenu() {
-    $('#madrasah-link').click(function () {
-        toggleSubmenu('#madrasah-submenu');
-    });
-
-    $('#aboutus-link').click(function () {
-        toggleSubmenu('#aboutus-submenu');
-    })
-}
-
-function toggleSubmenu(elem) {
-    if ($(elem).css('display') === 'none') {
-        $(elem).slideDown();
-    } else {
-        $(elem).slideUp();
-    }
-}
-
-function setPopup(modal) {
-  $(modal).addClass('is-active');
-}
-
-function removePopup(modal) {
-  $(modal).removeClass('is-active');
+function setNewsLetterBanner() {
+    const emailHtmlBanner = 
+        '<div id="newsletter-banner" class="row">' +
+        '<div class="col-4">Please sign up for our newsletter: </div>' +
+        '<div class="col-4"><input tye="email" placeholder="user@example.com"></div>' +
+        '<div class="col-4"><i class="fas fa-times"></i></div>'
+        '</div>';
+    $('body').append(emailHtmlBanner);
 }
 
 function setMadrasahMap() {
@@ -114,4 +103,9 @@ function setJummahMap() {
 
     }
 
+}
+
+function hideBanner() {
+    document.cookie = "noBanner=true";
+    $('#newsletter-banner').css('display', 'none');
 }
