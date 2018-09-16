@@ -4,8 +4,9 @@
 $(document).ready(function () {
     if (document.cookie.includes('noBanner=true')) {
         $('#newsletter-banner').css('display', 'none');
+        $('#newsletter-banner-mob').css('display', 'none');
     } else {
-        $('#newsletter-banner').css('display', 'inline-block');
+        $('#newsletter-banner').css('display', 'block');
     }
     setHijriDay();
     setPrayerTimes();
@@ -17,7 +18,7 @@ $(document).ready(function () {
 function getCurrentTime() {
     const currentTime = moment().format('MMMM Do YYYY');
 
-    $('#date-header').html(currentTime)
+    $('#date-header').html(currentTime);
 }
 
 function setHijriDay() {
@@ -30,7 +31,7 @@ function setHijriDay() {
         const hijriMonth = response['data']['hijri']['month']['en'];
         const hijriYear = response['data']['hijri']['year'];
 
-        $('#date-header').html(currentTime + ' • ' + hijriDay + ' ' + hijriMonth + ' ' + hijriYear)
+        $('#date-header').html(currentTime + ' • ' + hijriDay + ' ' + hijriMonth + ' ' + hijriYear);
     });
 }
 
@@ -50,7 +51,7 @@ function setPrayerTimes() {
             prayerHtml
         );
 
-    })
+    });
 }
 
 function setNewsLetterBanner() {
@@ -58,7 +59,7 @@ function setNewsLetterBanner() {
         '<div id="newsletter-banner" class="row">' +
         '<div class="col-4">Please sign up for our newsletter: </div>' +
         '<div class="col-4"><input tye="email" placeholder="user@example.com"></div>' +
-        '<div class="col-4"><i class="fas fa-times"></i></div>'
+        '<div class="col-4"><i class="fas fa-times"></i></div>';
         '</div>';
     $('body').append(emailHtmlBanner);
 }
@@ -68,13 +69,13 @@ function setMadrasahMap() {
         center: new google.maps.LatLng(51.583549, 0.131200),
         zoom: 15,
         mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
+    };
 
     const elem = document.getElementById("madrasah-location-map");
 
     if (elem) {
         const map = new google.maps.Map(document.getElementById("madrasah-location-map"), mapOptions);
-        const myCenter = {lat: 51.583549, lng: 0.131200}
+        const myCenter = {lat: 51.583549, lng: 0.131200};
         const marker = new google.maps.Marker({
             position: myCenter,
             map: map
@@ -89,13 +90,13 @@ function setJummahMap() {
         center: new google.maps.LatLng(51.585298, 0.136153),
         zoom: 15,
         mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
+    };
 
     const elem = document.getElementById("jummah-location-map");
 
     if (elem) {
         const map = new google.maps.Map(document.getElementById("jummah-location-map"), mapOptions);
-        const myCenter = {lat: 51.585298, lng: 0.136153}
+        const myCenter = {lat: 51.585298, lng: 0.136153};
         const marker = new google.maps.Marker({
             position: myCenter,
             map: map
@@ -108,4 +109,9 @@ function setJummahMap() {
 function hideBanner() {
     document.cookie = "noBanner=true";
     $('#newsletter-banner').css('display', 'none');
+}
+
+function hideMobileBanner() {
+    document.cookie = 'noBanner=true';
+    $('#newsletter-banner-mob').css('display', 'none');
 }

@@ -68,28 +68,7 @@ h2 {
     background-color: #67c6e852;
 }
 
-@media screen and (max-width: 600px) {
-.site-nav input:checked ~ .trigger {
-    display: block;
-    padding-bottom: 5px;
-}
-
-    #prayer-times {
-        display: none;       
-    }
-
-    #newsletter-banner {
-        display: none!important;
-    } 
-}
-@media screen and (max-width: 600px) {
-.site-nav input ~ .trigger {
-    clear: both;
-    display: none;
-}
-}
-
-#newsletter-banner {
+#newsletter-banner, #newsletter-banner-mob {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -98,7 +77,9 @@ h2 {
     display: inline-block;
     z-index: 3;
 }
-
+#newsletter-banner-mob {
+        display: none;
+    }
 
 #newsletter-banner input {
     display: inline-block;
@@ -117,3 +98,41 @@ h2 {
     text-align: right;
     min-height: 33px;
 }
+
+@media screen and (max-width: 600px) {
+    .site-nav input:checked ~ .trigger {
+        display: block;
+        padding-bottom: 5px;
+    }
+
+    #prayer-times {
+        display: none;       
+    }
+
+    #newsletter-banner {
+        display: none!important;
+    } 
+
+    #newsletter-banner-mob {
+        display: block;
+    }
+
+    #newsletter-banner-mob input {
+        padding: 0.5rem;
+        box-sizing: border-box;
+        width: 90%;
+
+    }
+}
+@media screen and (max-width: 600px) {
+    .site-nav input ~ .trigger {
+        clear: both;
+        display: none;
+    }
+
+    
+}
+
+
+
+
