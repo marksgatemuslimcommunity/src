@@ -41,11 +41,12 @@ layout: default
         </div>
     </div>
     <div class="row">
-        <div class="col-12">
+        <div class="col-8">
         {%- if site.posts.size > 0 -%}
                 <h2>{{ page.list_title | default: "News & Current Affairs" }}</h2>
                 <ul class="post-list">
                 {%- for post in site.posts -%}
+                {%- unless post.categories contains 'vacancy'-%}
                 <li>
                     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
                     <span class="post-meta">{{ post.date | date: date_format }}</span>
@@ -56,12 +57,29 @@ layout: default
                     </h3>
                     {{ post.excerpt }}
                 </li>
+                {%- endunless -%}
                 {%- endfor -%}
                 </ul>
 
                 <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
         {%- endif -%}
 
+        </div>
+        <div class="col-4">
+            <h2>Vacancies</h2>
+            {%- if site.posts.size > 0 -%}
+                {%- for post in site.posts -%}
+
+                    {%- if post.categories contains 'vacancy' -%}
+                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
+                        <span class="post-meta">{{ post.date | date: date_format }}</span>
+                        <p><a href="{{ post.url | relative_url }}">{{ post.title }}</a></p>
+                        <p>{{post.excerpt}}</p>
+                    {%- endif -%}
+
+                {%- endfor -%}
+            {%- endif -%}
         </div>
     </div>
    

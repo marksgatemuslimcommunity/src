@@ -20,7 +20,9 @@
           {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}
+            {%- unless my_page.title contains 'Privacy Policy' or my_page.title contains 'Terms and Conditions'-%}
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            {%- endunless -%}
             {%- endif -%}
           {%- endfor -%}
         </div>
@@ -30,14 +32,26 @@
     <div id="prayer-times"></div>
   </div>
 </header>
-<div id="newsletter-banner" class="row">
-    <div class="col-4">Please sign up for our newsletter: </div>
+
+<!-- <div id="newsletter-banner" class="row">
+  <div class="banner-link"><a href="javascript:void(0)" onclick="hideBanner()">Close</a></div>
+<div class="ml-form-embed"
+  data-account="1271704:q4q6a3f8g9"
+  data-form="1043280:s7r6u8">
+</div>
+ <div class="col-4">Please sign up for our newsletter: </div>
     <div class="col-4"><input tye="email" placeholder="user@example.com"></div>
     <div class="col-4"><a href="javascript:void(0)" onclick="hideBanner()"><i class="fas fa-times"></i></a></div>
 </div>
 <div id="newsletter-banner-mob" class="row">
-    <div class="col-12">Please sign up for our newsletter:
+
+  <div><a href="javascript:void(0)" onclick="hideMobileBanner()">Close</a></div>
+    <div class="ml-form-embed"
+    data-account="1271704:q4q6a3f8g9"
+    data-form="1043280:s7r6u8">
+  </div>
+   <div class="col-12">Please sign up for our newsletter:
        <a href="javascript:void(0)" onclick="hideMobileBanner()">
         <i class="fas fa-times"></i></a></div>
     <div class="col-12"><input tye="email" placeholder="user@example.com"></div>
-</div>
+</div> -->

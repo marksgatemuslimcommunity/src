@@ -12,6 +12,7 @@ $(document).ready(function () {
     setPrayerTimes();
     setMadrasahMap();
     setJummahMap();
+    $('.banner-link').css({'text-decoration': 'underline', 'margin-left': '47em'})
 
 });
 
@@ -36,7 +37,7 @@ function setHijriDay() {
 }
 
 function setPrayerTimes() {
-    const prayerTimesUrl = 'http://api.aladhan.com/timings/' + moment().format('DD-MM-YYYY') + '?latitude=51.508515&longitude=-0.1254872&timezonestring=Europe/London&method=2&school=1';
+    const prayerTimesUrl = 'https://api.aladhan.com/timings/' + moment().format('DD-MM-YYYY') + '?latitude=51.508515&longitude=-0.1254872&timezonestring=Europe/London&method=2&school=1';
     $.getJSON(prayerTimesUrl, function (response) {
         const timings = response['data']['timings'];
 
