@@ -5,42 +5,22 @@ layout: default
     <div class="home">
     <div class="row">
         <div class="col-12">
-        
-
         {{ content }}
         </div>
     </div>
     <div class="row">
         <div class="col-12">
-            <h2>As-salamu alaykum and Welcome to Marks Gate Muslim Community!</h2>
+            <h2 class="title--align">السلام عليكم ورحمة الله وبركاته</h2>
+						<h3 class="title--align">May the peace, mercy, and blessings of Allah be with you</h3>
         </div>
-        <div class="col-6"><img src="{{ "/assets/image/front-page-1.jpg" | relative_url }}" alt=""></div>
-        <div class="col-6"><img src="{{ "/assets/image/front-page-2.jpg" | relative_url }}" alt=""></div>
+        <div class="col-6"><img src="{{
+          "/assets/image/ramadan-mubarak-2019.png" | relative_url }}"
+          alt="Ramadan Mubarak 2019"></div>
+        <div class="col-6"><img src="{{
+          "/assets/image/ramadan-masjid-2019.jpeg" | relative_url }}"
+          alt="Ramadan Masjid Mubarak 2019"></div>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <h3>What we do</h3>
-            <p>We provide facilities for prayer particularly for Jummah prayer as well as
-            Taraweeh prayer during Ramadan. </p>
-            <h3>Is that all we do?</h3>
-            <p>We provide fund raising for those unfortunate in life (Poor and needy).
-               We also provide Madrasah classes for children being taught by an experienced Mualim. 
-               
-            </p>
-            <h3>What is our goal?</h3>
-            <p>
-                <ul>
-                    <li>Continuous Islamic events</li>
-                    <li>Development of local community</li>
-                    <li>Contribute to social, spirital and economic enhancement of the whole community</li>
-                </ul>
-            </p>
-            <p>
-            <strong>We plan to do so much <a href="{{ "/about" | relative_url }}">more</a></strong>
-            </p>
-        </div>
-    </div>
-    <div class="row">
+        <div class="row">
         <div class="col-8">
         {%- if site.posts.size > 0 -%}
                 <h2>{{ page.list_title | default: "News & Current Affairs" }}</h2>
@@ -66,6 +46,11 @@ layout: default
 
         </div>
         <div class="col-4">
+          <h2>Quick links</h2>
+          <p class="quick-link"><a href="{{ 'assets/image/ramadan-calendar-2019.jpeg' }}"><strong>Ramadan
+            Calendar 2019</strong></a></p>
+          <p class="quick-link"><a href="{{ 'assets/docs/ramadan-challenge-form-2019.pdf'
+          }}"><strong>Ramadan Childrens Challenge PDF</strong></a></p>
           <h2>Madrasah</h2>
               <h3><a href="{{ '/madrasah/' | relative_url}}">Madrasah - latest
                 news</a></h3>
@@ -77,7 +62,7 @@ layout: default
               be sure to check this page. Alhamdulilah we have been blessed
               with knowledgable Muslims of Islam.</p>
 
-            <h2>Vacancies</h2>
+            <!-- <h2>Vacancies</h2>
             {%- if site.posts.size > 0 -%}
                 {%- for post in site.posts -%}
 
@@ -91,7 +76,43 @@ layout: default
 
                 {%- endfor -%}
             {%- endif -%}
+        </div> -->
         </div>
     </div>
-   
-    </div>
+   <div class="row">
+        <div class="col-6">
+            <h3>Facilities we provide</h3>
+            <p>We provide various facilities.</p>
+            <ul>
+              <li>Friday prayer</li>
+              <li>Ramadan Taraweeh</li>
+              <li>Iftar Programme</li>
+              <li>Eid prayer</li>
+              <li>Eid festival</li>
+              <li>Madrasah for children</li>
+              <li>Continuous Islamic events</li>
+              <li>Development of local community</li>
+              <li>Economic enhancement of the whole community</li>
+            </ul>
+
+        </div>
+        <div class="col-6">
+          <h3>What you can do and our goal</h3>
+          <p>
+          <ul>
+            <li>Donate feesabilillah</li>
+            <ul>
+              <li>Donate to: <br>
+                <p>Mark Gate Muslim Community<br>
+                Account No: 14690357<br>
+                Sort Code: 60-05-01<br>
+                Natwest</p>
+              </li> 
+            </ul>
+            <li>Aim to have a masjid to facilitate prayers</li>
+          </ul>
+          </p>
+          <div>
+          </div>
+
+        </div>

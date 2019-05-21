@@ -5,12 +5,8 @@ permalink: /madrasah/
 ---
 ## What we do?
 In order to educate future generations, we are currently teaching children in 
-**Tajweed** and understanding of **Quran**. A member of our community has been
-committed in teaching those children who are dedicated to learn.
-
+**Tajweed** and understanding of **Quran**. We are aiming to have the best of our future generation.
 Our Mualim has over 20 years experience and is DBS certified.
-
-We provide education in multiple areas of our classes that extends from just learning how to read Quran.
 
 ### Who are teaching/supporting the classes?
 [**Meet the team**]({{ '/madrasah-team/' | relative_url }}) to find out more.
@@ -45,7 +41,7 @@ future generations in Marks Gate In-Sha-Allah.
 It is important to take part in development of our local community. And in turn, you will have a chance to know other parents who are like-minded. This is a chance to grow and keep a close knit of parents together. Children also benefit from being with other students.
 
 ## How much does it cost?
-In order to deal with administration and providing other resources, we have a set pricing. In order to be affordable and benefit your children, we charge **£1.67 per hour**.
+In order to deal with administration and providing other resources, we have a set pricing. In order to be affordable and benefit your children, we charge **£15.00 per week**.
 
 ## Can I see an overview of this term and the cost breakdown?
 You can refer to [**this**]({% post_url 2018-09-17-timetable-and-costing %}) post for more information about the timetable as of 2018 as well cost breakdown.

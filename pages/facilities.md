@@ -1,12 +1,20 @@
 ---
 layout: page
-title: Jummah 
-permalink: /jummah/
+title: Facilities 
+permalink: /facilities/
 ---
-## What time does Jummah start?
-The khutba starts at **12:45 PM**
+## Facilities we provide
+- Friday prayer
+  - Summer
+    - Door opens: 12:30 PM
+    - Khutbah: 1:15 PM (Takes max approximately 30 to 45 mins)
+  - Winter
+    - Door opens: 12:30 PM
+    - Khutbah: 12:45 PM (Takes max approximately 30 to 45 mins)
 
-Jummah Prayer starts at **1:15 PM**
+- Ramadan Taraweeh
+- Eid Prayer
+- Madrasah for children
 
 ## Where are we usually located?
 We are usually located in **Marks Gate Community Centre**. In some cases, we may change the venue. We will usually inform key contacts in the community to let as many people know as soon as possible.

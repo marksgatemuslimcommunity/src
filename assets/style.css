@@ -1,14 +1,24 @@
+.title--align {
+  text-align: right;
+  width: 100%;
+  color: #298a5a;
+}
+
+.page-content .wrapper {
+  max-width: calc(900px - (30px * 2));
+}
+
 .logo {
     width: 80%;
 }
 
 a:hover, a:link {
-    text-decoration: none;
-    }
+  text-decoration: none;
+}
 
 nav a:link, nav a:active, nav a:visited {
     color:  #144e31 !important;
-    padding: 0.5rem;
+    text-transform: uppercase;
 }
 
 .post-list-heading {
@@ -41,7 +51,7 @@ li {
 
 
 .madrasah-icons {
-    font-size: 28px;
+    font-size: 42px;
 }
 
 .panel .col-4{
@@ -54,14 +64,25 @@ li {
 }
 
 
-#date-header, #prayer-times{
+#date-header, #prayer-times, #nav--quick-link{
     clear: both;
     float: right;
 }
 
+h2,h3 {
+  color: #298a5a;
+}
+
 h2 {
     font-size: 2rem;
-    color: #298a5a;
+}
+
+.quick-link a strong {
+  color: #2a7ae2;
+}
+
+.quick-link a strong:visited {
+  color: #1756a9;
 }
 
 .site-footer {

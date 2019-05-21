@@ -5,7 +5,6 @@ permalink: /madrasah-team/
 ---
 ## Who is teaching?
 **Qari & Hafiz-ul-Quran Maulana Mustafa Sharif**  
-<img src="{{ '/assets/image/mustafa.png' | relative_url }}">  
 Brother Mustafa has been teaching Quran and hifzul Quran for over **20 years**.
 He is a british citizen from Yemen and one of the Ahlul-bait. Mustafa was one
 of the pioneers of "Al-Ansar Islamic Education centre". During this time, he
@@ -22,7 +21,6 @@ Alhamdulilah we are blessed to be reminded of Allah with brother Mustafa's help.
 
 
 **Saiful Tareq**  
-<img src="{{ '/assets/image/tareq.jpg' | relative_url }}">  
 Brother Tareq has studied in Madrasah since 1989. He has studied and been
 a student of Al-Quran and Islamic studies. He has since continued to research
 in comparative religious beliefs for several years. Since the completion of
